@@ -1,0 +1,174 @@
+.jumbotron{
+  width: 85%;
+  height:400px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid black;
+  background-image: url("../../images/trippy1.jpeg");
+  background-size:cover;
+  border-radius: 4px;
+
+}
+
+.jumbotron2{
+  width: 85%;
+  height:400px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid black;
+  background-image:url("../../images/trippybear.jpg");
+  background-size:cover;
+  border-radius: 4px;
+
+}
+.goodresults{
+  text-align: center;
+  
+}
+
+.mapbox{
+  width: 506px;
+  height: auto;
+  border:3px solid black;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.picc{
+  width:500px;
+  height: auto;
+}
+
+.utahselector{
+  width: 300px;
+  text-align: center;
+  height: 75px;
+  margin-left:auto;
+  margin-right:auto;
+  border: 4px solid black;
+  background-color: yellow;
+}
+.fuck{
+  font-family: arial rounded mt bold;
+}
+
+.burg{
+  float:right;
+  padding-top: 13px;
+  padding-right: 10px;
+}
+
+.topy{
+  width: 20px;
+  border-top: 3px solid white;
+  height: 5px;
+
+}
+
+.panel{
+  height:300px;
+  width:150px;
+  border: 2px solid black;
+  display:none;
+  background-color: white;
+  color:black;
+}
+
+.drop{
+  color:black;
+}
+
+.box-sign{
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 250px;
+  border: 6px solid black;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.box-up{
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 315px;
+  border: 6px solid black;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.searchbox{
+  width:60%;
+  border:4px solid black;
+  background-color: yellow;
+  height:102px;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.upload{
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 75px;
+  border:4px solid black;
+
+}
+
+
+#search{
+  width:70%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+h3{
+  font-family: arial rounded mt bold;
+}
+h5{
+  color:blue;
+  font-family: helvetica;
+}
+
+#email{
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#password{
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#fname{
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#lname{
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#username{
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+label{
+  font-family: helvetica;
+  text-align: left !important;
+}
+@media screen and (min-width:0px) and (max-width:500px){
+  .big-nav{display:none;}
+  .righty{display:none;}
+
+}
+
+@media screen and (min-width:501px) and (max-width:2000px){
+  .mini-nav{display:none;}
+}

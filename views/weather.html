@@ -1,0 +1,28 @@
+<h1 class="ohyeah">Weather/Snow Report Page</h1>
+<div class="jumbotron">
+
+</div>
+<br>
+<br>
+<div class ="searchbox">
+    <form>
+        <label for ="searchstate">Input State Abbreviation:</label><br>
+        <input type ="text" id="search" name="searchstate" ng-model="state"><br>
+        <label for ="searchcity">Input City:</label><br>
+        <input type ="text" id="search" name="searchcity" ng-model="city"><br>
+        <input type="submit" value="Submit" ng-click="clickSearch(state,city)">
+
+    </form>
+
+
+</div>
+
+<div class ="goodresults">
+<div ng-repeat="forecast in forecasts" class="weatherhitsuccess">
+<h3>{{forecast.date.weekday}}</h3>
+<img src="{{forecast.icon_url}}">
+<h3>{{forecast.conditions}}</h3>
+<h3>{{forecast.high.fahrenheit}}</h3>
+<h3>{{forecast.low.fahrenheit}}</h3>
+</div>
+</div>

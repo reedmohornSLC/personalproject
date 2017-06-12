@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="maptavius">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://use.fontawesome.com/b12b626040.js"></script>
+    <title>Map-Tavius</title>
+    <link rel="stylesheet" href="./app/css/style.css">
+    <link rel="stylesheet" href="./app/css/style2.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+</head>
+
+<body ng-controller="weathercontroller">
+  <div class = "top">
+      <i class="fa fa-snowflake-o fa-2x" aria-hidden="true"></i>
+      <span>MapTavius</span>
+      <div class="righty">
+        <div class="sign-up"><a class ="what" ui-sref="sign-up">Sign-Up</a></div>
+        <div class="sign-in"><a class = "what" ui-sref="sign-in">Sign-In</a></div>
+      </div>
+
+  </div>
+
+  <nav class = "big-nav">
+    <ul class="primary-nav">
+          <li><a ui-sref="pics">Pics</a></li>
+          <li><a ui-sref="maps">Dank Maps</a></li>
+          <li><a ui-sref="home">Weather/Snow</a></li>
+
+    </ul>
+  </nav>
+
+  <nav class = "mini-nav">
+      <div class = "burg">
+          <div class = "topy"></div>
+          <div class = "topy"></div>
+          <div class = "topy"></div>
+          <div class = "panel">
+              <a ui-sref="home"><span class = "drop">Weather/Snow</span></a><br>
+              <a ui-sref="maps"><span class = "drop">Dank Maps</span></a><br>
+              <a ui-sref="pics"><span class = "drop">Pics</span></a><br>
+              <a ui-sref="sign-up"><span class = "drop">Sign Up</span></a><br>
+              <a ui-sref="sign-in"><span class = "drop">Sign In</span></a><br>
+          </div>
+      </div>
+  </nav>
+
+<!--VIEWS GO HERE-->
+  <ui-view></ui-view>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+  <script type ="text/javascript" src="jquery.js"></script>
+  <script src="./app/app.js"></script>
+  <script src="./app/weathercontroller.js"></script>
+  <script src="./app/weatherservice.js"></script>
+  <script src ="./app/signupcontroller.js"></script>
+  <script src ="./app/userservice.js"></script>
+  <script src ="./app/mapscontroller.js"></script>
+</body>
+</html>

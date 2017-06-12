@@ -1,0 +1,32 @@
+<h1>Dank Maps Page</h1>
+<div class="jumbotron2">
+
+</div><br>
+
+<div class ="utahselector">
+<span class= "fuck">Select A Utah Ski Resort:</span><br>
+
+<select ng-model="selectedName" ng-options="x for x in resorts">
+  <!-- <option value="alta">Alta Ski Resort</option>
+  <option value="beaver">Beaver Mountain</option>
+  <option value="brianhead">Brian Head Resort</option>
+  <option value="brighton">Brighton</option>
+  <option value="cherrypeak">Cherry Peak</option>
+  <option value="deervalley">Deer Valley Resort</option>
+  <option value="eaglepoint">Eagle Point</option>
+  <option value="nordicvalley">Nordic Valley</option>
+  <option value="parkcity">Park City</option>
+  <option value="powdermountain">Powder Mountain</option>
+  <option value="snowbasin">Snowbasin</option>
+  <option value="snowbird">Snowbird</option>
+  <option value="solitude">Solitude Mountain Resort</option>
+  <option value="sundance">Sundance Resort</option> -->
+</select><br>
+<input type="submit" ng-click ="findMap()"></input>
+</div>
+<br>
+
+<div ng-repeat="result in results" class ="mapbox">
+
+      <img src = "{{result.mapurl}}" class ="picc">
+</div>

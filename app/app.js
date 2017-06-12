@@ -1,0 +1,27 @@
+angular.module('maptavius',['ui.router'])
+
+.config(function($stateProvider,$urlRouterProvider){
+  $stateProvider
+  .state('home',{
+    url:'/',
+    templateUrl:'views/weather.html'
+  })
+  .state('maps',{
+    url:'/maps',
+    templateUrl:'views/maps.html',
+    controller:'mapscontroller'
+  })
+  .state('pics',{
+    url:'/picks',
+    templateUrl:'views/pics.html'
+  })
+  .state('sign-up',{
+    url:'/sign-up',
+    templateUrl:'views/sign-up.html',
+    controller:'signupcontroller'
+  })
+  .state('sign-in',{
+    url:'/sign-in',
+    templateUrl:'views/sign-in.html'
+  })
+})
