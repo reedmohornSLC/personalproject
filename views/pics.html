@@ -1,11 +1,16 @@
-<h1>Dank Pics Page</h1>
+<h1>Pics Page</h1>
 <div class = "upload">
 
-<form action="/action_page.php">
-  <label for ="pic">Upload A Sweet Pic Here:</label>
-  <input type="file" name="pic" accept="image/*" class="sup"><br>
-  <input type="submit">
-</form>
+<form>
+  <label for ="pUrl">Upload A Sweet Pic Here:</label><br>
+  <input type ="text" id="pUrl" name="pUrl" ng-model="newPic.pUrl"><br>
+  <input type="submit" ng-click="uploadPhoto()">
+</form><br>
+</div><br>
 
 
+<div ng-repeat= "x in photos" class = "meegan">
+  <div class = "chill">
+  <img ng-src = "{{x.photourl}}" class = "picbord">
+  </div>
 </div>

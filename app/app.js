@@ -13,7 +13,8 @@ angular.module('maptavius',['ui.router'])
   })
   .state('pics',{
     url:'/picks',
-    templateUrl:'views/pics.html'
+    templateUrl:'views/pics.html',
+    controller:'picscontroller'
   })
   .state('sign-up',{
     url:'/sign-up',

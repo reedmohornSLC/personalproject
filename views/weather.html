@@ -15,13 +15,13 @@
     </form>
 
 
-</div>
+</div><br>
 
 <div class ="goodresults">
 <div ng-repeat="forecast in forecasts" class="weatherhitsuccess">
 <h3>{{forecast.date.weekday}}</h3>
 <img src="{{forecast.icon_url}}">
-<h3>{{forecast.conditions}}</h3>
+
 <h3>{{forecast.high.fahrenheit}}</h3>
 <h3>{{forecast.low.fahrenheit}}</h3>
 </div>

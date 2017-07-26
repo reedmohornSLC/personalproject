@@ -25,4 +25,29 @@ angular.module('maptavius').service('userservice',function($http){
     })
 
   }
+
+  this.getUserInfo = function(){
+        return $http.get("getuserinfo");
+  };
+
+
+  this.insertPhoto = function(photo){
+    console.log(photo)
+    return $http({
+      method:"POST",
+      url:"/api/newphoto",
+      data:photo
+    }).then(function(response){
+        console.log(response);
+        return response;
+    })
+  }
+
+  this.getPhotos1 = function(){
+    return $http({
+      method:"GET",
+      url:"/api/photos"
+    })
+  }
+
 })
