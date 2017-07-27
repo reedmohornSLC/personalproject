@@ -129,4 +129,4 @@ app.get('/api/photos',function(req,res){
 
 
 
-app.listen(3000,console.log("your connected and database is working"));
+app.listen(80,console.log("your connected and database is working"));
